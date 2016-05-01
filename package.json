@@ -1,0 +1,40 @@
+{
+  "name": "plover-assets-vendor",
+  "version": "1.0.3",
+  "description": "【插件】可以让npm模块直接作为前端模块使用",
+  "main": "lib/index",
+  "scripts": {
+    "lint": "eslint lib test",
+    "test": "mocha --require should --reporter spec --recursive --bail --check-leaks --timeout 10000 test/",
+    "cov": "istanbul cover _mocha -- --require should --recursive --bail --check-leaks --timeout 10000 test/ -R spec",
+    "travis": "istanbul cover _mocha --report lcovonly -- --require should --recursive --bail --check-leaks --timeout 10000 test/ -R spec",
+    "ci": "npm run lint && npm run test && npm run travis",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -o CHANGELOG.md -s"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "debug": "~2.2.0",
+    "resolve-from": "~2.0.0"
+  },
+  "devDependencies": {
+    "conventional-changelog-cli": "~1.1.1",
+    "eslint": "~2.9.0",
+    "eslint-config-bce": "~1.2.0",
+    "istanbul": "~0.4.1",
+    "mocha": "~2.4.5",
+    "plover": "~2.0.1",
+    "should": "~8.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plover-modules/plover-assets-vendor.git"
+  },
+  "author": "bencode@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plover-modules/plover-assets-vendor/issues"
+  },
+  "homepage": "https://github.com/plover-modules/plover-assets-vendor#readme"
+}
