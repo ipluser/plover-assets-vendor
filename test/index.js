@@ -20,7 +20,7 @@ describe('plugin', function() {
       assets: true,
       assetsRoot: '',
       reload: false,
-      build: { uglify: false }
+      build: false
     });
   });
 
