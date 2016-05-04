@@ -1,6 +1,6 @@
 {
   "name": "plover-assets-vendor",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "【插件】可以让npm模块直接作为前端模块使用",
   "main": "lib/index",
   "scripts": {
@@ -24,7 +24,7 @@
     "eslint-config-bce": "~1.2.0",
     "istanbul": "~0.4.1",
     "mocha": "~2.4.5",
-    "plover": "~2.0.1",
+    "plover": "~2.0.2",
     "should": "~8.3.1"
   },
   "plover": {
