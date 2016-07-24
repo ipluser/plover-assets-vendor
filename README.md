@@ -6,41 +6,35 @@
 [![Test coverage][coveralls-image]][coveralls-url]
 
 
-让普通模块直接作为plover前端模块使用
+【插件】让npm模块直接作为前端模块使用
 
 
-## 使用
-
-1\. 安装此插件
+## Installing
 
 ```
 npm install --save plover-assets-vendor
 ```
 
+## Usage
 
-2\. 安装需要使用的前端模块
+使用`npm`安装第三方资源包：
 
-
-```
+```sh
 npm install --save jquery
-npm install --save bootstrap
 ```
 
+在`package.json`中添加配置信息：
 
-3\. 在`package.json`中添加以下配置
 
-
-```
+```json
 "ploverAssetsVendor": [
-  "jquery",
-  "bootstrap"
+  "jquery"
 ]
 ```
 
-4\. 然后在应用中就可以使用了
+引入第三方资源：
 
-
-```
+```html
 <script src="{{assets.js('jquery:dist/jquery.min.js')}}"></script>
 ```
 
